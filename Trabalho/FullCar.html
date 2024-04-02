@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#ADD8E6">
+  <form action=""method="post" enctype="multipart/form-data">
+
+    <center><img src="logo.jpg.jpg" alt="logo.jpg" width="400" height="300"></center>
+
+    <fieldset>
+
+       <legend>Dados do Veículo:</legend>
+
+       <label>Tipo do Veículo:</label> 
+       <label>
+        <input type="radio" name="Veiculo" value="Novo">Novo
+     <label>
+        <Input  type="radio" name="Veiculo" value="Usado">Usado
+     </label>
+
+     <br /><br />
+    
+     <label> Categoria:</label>
+
+     <select name="Categoria:" id="Categoria:">
+       <option value="Hatch">Hatch</option>
+       <option value="SUV">SUV</option>
+       <option value="Picape">Picape</option>
+       <option value="Utilitário">Utilitário</option> 
+       <option value="Perua">Perua</option>
+       <option value="Minivan">Minivan</option>
+       <option value="Conversível">Conversível</option>
+       <option value="outros">outros</option>
+     </select>
+
+     <br /><br />
+
+     <label> Fabricante:</label>
+
+     <select name="Fabricante:" id="Fabricante:">
+       <option value="Fiat">Fiat</option>
+       <option value="Ford">Ford</option>
+       <option value="Chevrolet">Chevrolet</option>
+       <option value="Volskwagen">Volskwagen</option> 
+       <option value="Citroën">Citroën</option>
+       <option value="Renault">Renault</option>
+       <option value="Kia">Kia</option>
+       <option value="outros">outros</option>
+     </select>
+
+     <br /><br />
+
+      <label> Modelo:</label><br />
+      <input  type="text" name="nome" id="nome" placeholder="Ex: Palio " required/>  <br />
+      <label> Quilometragem:</label><br />
+      <input  type="text" name="nome" id="nome" placeholder="Ex:KM " required/>  <br />
+      <label> Preço:</label><br />
+      <input  type="text" name="nome" id="nome" placeholder="Ex: $Reais " required/>  <br />
+      <label> Placa:</label><br />
+     <input  type="text" name="nome" id="nome" placeholder="Ex: EHO-3EOH " required/>  
+    
+     <br />
+     <br />
+
+     <label>Tipo de cambio:</label> 
+       <label>
+        <input type="radio" name="cambio" value="Manual">Manual
+     <label>
+        <Input  type="radio" name="cambio" value="Automatico">Automatico
+     </label>    
+    
+     <br /><br />
+
+     <label>Blindagem:</label> 
+       <label>
+        <input type="radio" name="Blindagem" value="Sim">Sim
+     <label>
+        <Input  type="radio" name="Blindagem" value="Não">Não
+     </label>
+
+     <br /><br />
+
+     <label> Número de portas:</label>
+     <input type="number" name="numero" id="numero" min="2" step="2" max="4" value="2"/>
+    
+     <br /><br />
+
+     <label> Combustível:</label>
+
+     <select name="Combustível:" id="Combustível:">
+       <option value="Etanol">Etanol</option>
+       <option value="Gasolina">Gasolina</option>
+       <option value="Diesel">Diesel</option>
+       <option value="Flex">Flex</option>
+       <option value="outros">outros</option>
+     </select>   
+
+     <br /><br />
+     <br/><label>Informaçoes adicionais</label><br />
+        <textarea cols="80" rows="10" name="informacao" id="informacao" maxlength="400" placeholder="Digite aqui..."></textarea><br />
+
+     <label>Arquivo</label>
+        <input type="file" name="arquivo" id="arquivo" accept=".jpg"/><br />
+
+        <br />
+
+        <input type="submit" value="Enviar">        
+        <input type="reset" value="Limpar">
+
+        
+    </fieldset>
+  </form>
+  </body>
+</html> 
